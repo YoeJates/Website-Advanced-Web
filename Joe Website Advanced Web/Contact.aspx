@@ -36,7 +36,9 @@
                             Display="Dynamic"
                             ForeColor = "Red">
                             </asp:RequiredFieldValidator>
-                            <asp:RegularExpressionValidator ID="RegularExpressionValidator1" Display="Dynamic" runat="server" ControlToValidate="emailText" ErrorMessage="Enter a valid email" ForeColor="Red">*</asp:RegularExpressionValidator>
+                            <asp:RegularExpressionValidator ID="RegularExpressionValidator1" runat="server" 
+                                ErrorMessage="Please enter a valid email" ControlToValidate="emailText"
+                                ForeColor="Red" ValidationExpression="\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*">*</asp:RegularExpressionValidator>
                         </td>
                     </tr>
                     <tr>
