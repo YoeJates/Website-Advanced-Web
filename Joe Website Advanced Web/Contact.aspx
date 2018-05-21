@@ -78,7 +78,7 @@
                     </tr>
                     <tr>
                         <td colspan="3">
-                            <asp:FileUpload ID="fileUpload" runat="server"></asp:FileUpload>
+                            <asp:FileUpload ID="fuAttachment" runat="server"></asp:FileUpload>
                         </td>
                     </tr>
                     <tr>

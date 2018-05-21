@@ -25,10 +25,10 @@ namespace Joe_Website_Advanced_Web
                     mailMessage.Body = "<b>Sender Name: </b>" + nameText.Text + "<br/>"
                         + "<b>Sender Email: </b>" + emailText.Text + "<br/>"
                         + "<b>Sender Message: </b>" + messageText.Text;
-                    if (fileUpload.HasFile)
+                    if (fuAttachment.HasFile)
                     {
-                        string fileName = Path.GetFileName(fileUpload.PostedFile.FileName);
-                        mailMessage.Attachments.Add(new Attachment(fileUpload.PostedFile.InputStream, fileName));
+                        string fileName = Path.GetFileName(fuAttachment.PostedFile.FileName);
+                        mailMessage.Attachments.Add(new Attachment(fuAttachment.PostedFile.InputStream, fileName));
                     }
                     mailMessage.IsBodyHtml = true;
                     mailMessage.Priority = MailPriority.Normal;
