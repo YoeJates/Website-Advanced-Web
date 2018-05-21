@@ -81,6 +81,11 @@
                     </tr>
                     <tr>
                         <td colspan="3">
+                            <asp:FileUpload ID="fileUpload" runat="server"></asp:FileUpload>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="3">
                             <asp:Label ID="validLabel" Font-bold="true" runat="server"></asp:Label>
                         </td>
                     </tr>
