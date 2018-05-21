@@ -19,7 +19,7 @@ namespace Joe_Website_Advanced_Web
                 {
                     MailMessage mailMessage = new MailMessage();
                     mailMessage.From = new MailAddress("joeyatesweb@gmail.com");
-                    mailMessage.To.Add(new MailAddress("joe@joeis.moe"));
+                    mailMessage.To.Add(new MailAddress("marylouflanglais@gmail.com"));
                     mailMessage.Subject = subjectText.Text;
                     mailMessage.Body = "<b>Sender Name: </b>" + nameText.Text + "<br/>"
                         + "<b>Sender Email: </b>" + emailText.Text + "<br/>"
