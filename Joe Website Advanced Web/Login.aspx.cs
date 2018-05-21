@@ -25,7 +25,6 @@ namespace Joe_Website_Advanced_Web
             var user = userManager.Find(nameText.Text, passwordText.Text);
             if (user != null)
             {
-                //todo: log user in / instruct user to log in
                 LogUserIn(userManager, user);
             }
             else

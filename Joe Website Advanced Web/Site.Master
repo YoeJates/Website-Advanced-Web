@@ -30,6 +30,8 @@
                         <li><a href="page.html">A Page</a></li>
                         <li><a href="FAQ.aspx">FAQ Page</a></li>
                         <li><a href="Contact.aspx">Contact</a></li>
+                        <li><a href="Register.aspx">Register</a></li>
+                        <li><a href="Login.aspx">Login</a></li>
                     </ul>
                 </div>
             </div>
