@@ -15,5 +15,22 @@ namespace Joe_Website_Advanced_Web
         {
 
         }
+
+        protected void submitBtn_Click(object sender, EventArgs e)
+        {
+            var identityDbContext = new IdentityDbContext("IdentityConnectionString");
+            var userStore = new UserStore<IdentityUser>(identityDbContext);
+            var manager = new UserManager<IdentityUser>(userStore);
+            var user = new IdentityUser() { UserName = nameText.Text, Email = emailText.Text };
+            IdentityResult result = manager.Create(user, passwordText.Text);
+            if (result.Succeeded)
+            {
+                Response.Redirect("Login.aspx");
+            }
+            else
+            {
+                validLabel.Text = "An error has occurred: " + result.Errors.FirstOrDefault();
+            }
+        }
     }
 }
