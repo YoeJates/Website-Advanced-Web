@@ -7,7 +7,7 @@
                 <table>
                     <tr>
                         <td>
-                            <b>Name:</b>
+                            <b>Username:</b>
                         </td>
                         <td>
                             <asp:TextBox ID="nameText" runat="server" Width="640px"></asp:TextBox>
@@ -87,5 +87,6 @@
                 </table>
     
                 </fieldset>
+            </div>
         </formview>
 </asp:Content>

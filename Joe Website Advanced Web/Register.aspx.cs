@@ -18,7 +18,7 @@ namespace Joe_Website_Advanced_Web
 
         protected void submitBtn_Click(object sender, EventArgs e)
         {
-            var identityDbContext = new IdentityDbContext("IdentityConnectionString");
+            var identityDbContext = new IdentityDbContext("db_1624528_webConnectionString");
             var userStore = new UserStore<IdentityUser>(identityDbContext);
             var manager = new UserManager<IdentityUser>(userStore);
             var user = new IdentityUser() { UserName = nameText.Text, Email = emailText.Text };

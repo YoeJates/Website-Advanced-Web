@@ -16,7 +16,7 @@ namespace Joe_Website_Advanced_Web
             app.UseCookieAuthentication(new CookieAuthenticationOptions
             {
                 AuthenticationType = DefaultAuthenticationTypes.ApplicationCookie,
-                LoginPath = new PathString("/Login.aspx")
+                LoginPath = new PathString("/Login")
             });
         }
     }

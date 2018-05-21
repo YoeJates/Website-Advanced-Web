@@ -8,7 +8,7 @@
                 <table>
                     <tr>
                         <td>
-                            <b>Name:</b>
+                            <b>Username:</b>
                         </td>
                         <td>
                             <asp:TextBox ID="nameText" runat="server" Width="640px"></asp:TextBox>
@@ -48,11 +48,12 @@
                     </tr>
                     <tr>
                         <td colspan="3">
-                            <asp:Button ID="registerBtn" runat="server" OnClick="submitBtn_Click" Text="Register" />
+                            <asp:Button ID="loginBtn" runat="server" OnClick="submitBtn_Click" Text="Login" />
                         </td>
                     </tr>
                 </table>
     
                 </fieldset>
+            </div>
         </formview>
 </asp:Content>
