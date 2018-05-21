@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="./Site.Master" AutoEventWireup="true" CodeFile="Homepage.aspx.cs" Inherits="Joe_Website_Advanced_Web.WebForm1" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="./Site.Master" AutoEventWireup="true" CodeFile="Default.aspx.cs" Inherits="Joe_Website_Advanced_Web.WebForm1" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="MainPlaceHolder" runat="server">
     <h1>Welcome to the black_white template</h1>
                     <p>This standards compliant, simple, fixed width website template is released as an 'open source' design (under a <a href="http://creativecommons.org/licenses/by/3.0">Creative Commons Attribution 3.0 Licence</a>), which means that you are free to download and use it for anything you want (including modifying and amending it). All I ask is that you leave the 'design from HTML5webtemplates.co.uk' link in the footer of the template, but other than that...</p>
