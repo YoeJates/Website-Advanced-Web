@@ -72,11 +72,13 @@
                         </td>
                     </tr>
                     <tr>
-                        <asp:FileUpload ID="Attachment" runat="server"></asp:FileUpload>
+                        <td colspan="3">
+                            <asp:ValidationSummary ID="ValidationSummary" runat="server" ForeColor="Red" HeaderText="Fix the following errors:" />
+                        </td>
                     </tr>
                     <tr>
                         <td colspan="3">
-                            <asp:ValidationSummary ID="ValidationSummary" runat="server" ForeColor="Red" HeaderText="Fix the following errors:" />
+                            <asp:FileUpload ID="fileUpload" runat="server"></asp:FileUpload>
                         </td>
                     </tr>
                     <tr>
