@@ -1,4 +1,5 @@
 ﻿using System;
+using System.IO;
 using System.Net.Mail;
 
 namespace Joe_Website_Advanced_Web
@@ -23,6 +24,11 @@ namespace Joe_Website_Advanced_Web
                     mailMessage.Body = "<b>Sender Name: </b>" + nameText.Text + "<br/>"
                         + "<b>Sender Email: </b>" + emailText.Text + "<br/>"
                         + "<b>Sender Message: </b>" + messageText.Text;
+                    if (fileUpload.HasFile)
+                    {
+                        string fileName = Path.GetFileName(fileUpload.PostedFile.FileName);
+                        mailMessage.Attachments.Add(new Attachment(fileUpload.PostedFile.InputStream, fileName));
+                    }
                     mailMessage.IsBodyHtml = true;
                     mailMessage.Priority = MailPriority.Normal;
                     SmtpClient MailClient = new SmtpClient("smtp.gmail.com", 587);
