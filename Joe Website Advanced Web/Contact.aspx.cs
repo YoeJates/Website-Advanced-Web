@@ -1,7 +1,6 @@
 ﻿using System;
 using System.IO;
 using System.Net.Mail;
-using Microsoft.Owin.Host.SystemWeb;
 
 
 namespace Joe_Website_Advanced_Web
