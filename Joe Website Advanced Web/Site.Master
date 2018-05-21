@@ -9,7 +9,7 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans|Oswald" rel="stylesheet">
     <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
     <meta name="keywords" content="website keywords, website keywords" />
-    <meta name="description" content="website description" />
+    <meta name="description" content="Website for strangers to introduce their fanfiction." />
 </head>
 <body>
     <form id="form1" runat="server">
