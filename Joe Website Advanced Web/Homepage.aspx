@@ -10,5 +10,6 @@
                     <ul>
                         <li>Internet Explorer 9</li>
                         <li>FireFox 25</li>
+                        <li>Google Chrome 31</li>
                     </ul>
 </asp:Content>
